@@ -32,7 +32,7 @@ function Navigations(props) {
               <Link to='/'>home</Link>
             </li>
             <li>
-              <Link to='/zmanga'>zsearch</Link>
+              <Link to='/zfind'>zsearch</Link>
             </li>
             <li>
               <Link to='/categories'>categories</Link>
