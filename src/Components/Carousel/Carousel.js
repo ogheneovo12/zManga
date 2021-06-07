@@ -26,7 +26,12 @@ function Carousel({ data, onActive }) {
           perPage : 2,
           pagination: false,
           lazyLoad:true,
-          perMove:1
+          perMove:1,
+          breakpoints:{
+              540:{
+                perPage : 1,
+              }
+          }
         }}>
           { data && data.map(  ({ title, mal_id, image_url})=>(
               <SplideSlide key={mal_id} >
