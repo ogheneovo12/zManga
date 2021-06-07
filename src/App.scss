@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    height: 100%;
+}
+@font-face {
+    font-family: 'hangyakuregular';
+    src: url('./assets/fonts/hangyaku-jr2am-webfont.woff2') format('woff2'),
+         url('./assets/fonts/hangyaku-jr2am-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+   overflow-x: hidden;
+    font-family:'hangyakuregular';
+}

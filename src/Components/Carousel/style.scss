@@ -1,0 +1,49 @@
+.carousel {
+  // box-shadow: inset 0px 0px 30px rgba(0,0,0,0.5);
+ 
+  .carousel_card {
+    min-height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin: 0 auto;
+    transform: scale(0.8);
+    transition: all .4s ease-in;
+   
+    .image {
+      width: 100%;
+     
+      height: 300px;
+      background-repeat: no-repeat;
+      //  background-size: 100% 100%;
+      background-position: center;
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px rgba($color: #000000, $alpha: 0.7);
+    }
+    h4{
+        color:#fff;
+        margin-top: 10px;
+    }
+  }
+ & > .carousel_slide{
+   .splide__arrows {
+        .splide__arrow {
+            top:110%;
+            &--prev {
+               left:60px;
+            }
+          &--next {
+            right: 80px;
+          }
+         
+        }
+  }
+}
+}
+
+
+
+.is-active {
+  & > .carousel_card {
+    transform: scale(1);
+  }
+}

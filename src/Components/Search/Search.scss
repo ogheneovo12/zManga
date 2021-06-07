@@ -1,0 +1,37 @@
+$radius:10px;
+.zmanga_search{
+    max-width: 1090px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    border-color: #fff;
+    border:1px solid rgba(255, 255, 255, 0.5);
+    border-radius: $radius;
+    &:focus-within{
+        outline: 0;
+        box-shadow: 0 0 10px 0.2rem gold;
+    }
+    input{
+        width:100%;
+        height: 100%;
+        background: transparent;
+        color:#fff;
+        border:none;
+        padding: 20px;
+        font-size: 18px;
+        &::placeholder{
+            color:rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        flex-shrink: 0;
+        width:100px;
+        border: 2px solid #fff;
+        border-radius: 0px $radius $radius  0px;
+    }
+   
+}

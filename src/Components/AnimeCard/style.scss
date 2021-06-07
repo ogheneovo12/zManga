@@ -1,0 +1,55 @@
+.anime_card_container {
+  text-align: center;
+  padding-bottom: 100px;
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    line-height: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 14px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .anime_card_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .anime_card {
+      opacity: 0;
+      transform: translateY(4em) rotateZ(-5deg);
+      transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+        opacity 0.3s 0.25s ease-out;
+      max-width: 600px;
+      width: 90%;
+      will-change: transform, opacity;
+      flex-basis: 250px;
+      min-height: 272px;
+      margin: 15px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      img {
+        width: 100%;
+        height: 314px;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: fill;
+      }
+      .info_region {
+        padding: 12px;
+        h3 {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      &.is-visible{
+            opacity: 1;
+            transform: rotateZ(0deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.background_wrapper {
+  width: 100vw;
+  height: 100vh;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+  filter:blur(2.5px);
+  transform: scale(1.5);
+  .background_container {
+    transform: scale(1.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: background-image 0.3s;
+  }
+}
+
+.zoom {
+  animation: zoomIn 13s forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+  }
+}
