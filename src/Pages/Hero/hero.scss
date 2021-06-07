@@ -1,0 +1,102 @@
+
+.hero{
+    position:absolute;
+    padding-top: 70px;
+    min-height: 100vh;
+    width:100%;
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #283E51, #0A2342);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #283E51, #0A2342); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -olinear-gradient(to top, #283E51, #0A2342); 
+    .inner{
+        // padding-bottom: 100px;
+        .hero_text{
+            padding:0px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            h1 {
+                // font-family: 'Rammetto One';
+                text-align: center;
+                font-size: 60px;
+                color: #fff;
+                margin:10px auto;
+                @media (max-width:400px){
+                    font-size: 40px;
+                }
+                
+              }
+              p{
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 20px;
+                  color:#fff;
+                  text-align: center;
+              }
+              .cta-buttons{
+                  display: flex;
+                  justify-content: center;
+                  margin-top: 20px;
+                  a{
+                      padding: 20px 50px;
+                      background: #fff;
+                      margin: 0 10px;
+                      text-decoration: none;
+                      outline: none;
+                      font-size: 20px;
+                      &.ghost{
+                          background: transparent;
+                          border:1px solid #fff;
+                          color:#fff;
+                      }
+                  }
+              }
+    }
+    .hero_img{
+        text-align: center;
+        img{
+            max-width:300px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+  
+  }
+      
+  @media (max-width:800px){
+      padding-top: 120px;
+  }
+  }
+  
+  .stars {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index:0;
+  }
+
+
+.float{
+    animation: float 4s ease-in-out infinite;
+}
+
+
+
+  
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+  
