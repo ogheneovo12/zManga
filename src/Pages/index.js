@@ -1,3 +1,3 @@
 export { default as Carousel } from "./Carousel";
-export { default as ZManga  } from "./ZManga";
+export { default as Zfind  } from "./Zfind";
 export { default as Hero } from "./Hero"
