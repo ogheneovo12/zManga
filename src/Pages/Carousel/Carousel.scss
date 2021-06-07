@@ -4,6 +4,7 @@
   min-height: 100vh;
   padding: 120px 0px;
   position: relative;
+  overflow-x: hidden;
   &::after {
     content: "";
     top: 0;
